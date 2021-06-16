@@ -57,13 +57,15 @@ body {
   justify-content: center;
   flex-direction: column;
   width: 100%;
+  margin-top: 100px;
 }
 .main_container {
   position: relative;
   height: 50px;
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
+  margin-top: 60px;
+  margin-bottom: 0;
 }
 input {
   background-color: #fff;
@@ -102,6 +104,10 @@ input:focus {
 .main_container.active button {
   transform: translateX(195px);
 }
+/* .meaning-section {
+  position: absolute;
+  bottom: 3%;
+} */
 
 .text-meaning {
   max-width: 600px;
@@ -119,6 +125,7 @@ input:focus {
   color: white;
   font-size: 18px;
   text-align: center;
+  margin: 0;
 }
 .suggestion {
   background-color: rgb(12, 23, 182);
@@ -138,4 +145,10 @@ input:focus {
 .audio-meaning {
   text-align: center;
   margin-top: 20px;
+}
+
+@media (max-width: 375px) {
+  body {
+    background-color: red;
+  }
 }
