@@ -57,7 +57,7 @@ async function getData(word) {
 
 function renderSound(soundName) {
   let subFolder = soundName.charAt(0);
-  let soundSrc = `https://media.merrian-webster.com/soundc11/${subFolder}/${soundName}.wav?key=${apiKey}`;
+  let soundSrc = `https://media.merriam-webster.com/soundc11/${subFolder}/${soundName}.wav?key=${apiKey}`;
 
   let aud = document.createElement("audio");
   aud.src = soundSrc;
